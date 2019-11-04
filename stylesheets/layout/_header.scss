@@ -3,3 +3,13 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+.navbar {
+    height: 3.25rem;
+
+    background-color: $brand-color;
+}
+
+body {
+    background-color: black;
+}
