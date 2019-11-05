@@ -1,0 +1,86 @@
+.section-slider {
+  margin-top: 5rem;
+}
+
+.swiper-container {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.card {
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  height: 18rem;
+
+  text-align: center;
+
+  border: none;
+
+  h2 {
+    font-family: $font-lato;
+    font-weight: 600;
+    color: $brand-color;
+  }
+
+  span {
+    z-index: 200;
+
+    font-size: 3rem;
+    line-height: 0;
+
+    &::before {
+      content: " ";
+
+      position: relative;
+      right: 0;
+      bottom: -20px;
+      z-index: 100;
+
+      display: block;
+      width: 100%;
+
+      border-bottom: 1px solid;
+      border-color: #eee;
+    }
+
+    &::after {
+      content: " ";
+
+      position: relative;
+      right: 0;
+      top: -9px;
+      z-index: 100;
+
+      display: block;
+      width: 100%;
+
+      border-top: 1px solid;
+      border-color: #eee;
+    }
+  }
+
+  h5 {
+    margin-top: 1rem;
+
+    font-size: 1rem;
+    font-family: $font-lato;
+    font-weight: 600;
+  }
+
+  p {
+    margin-top: 1rem;
+
+    font-size: 1rem;
+  }
+}
+
+.card-img-top {
+  width: 5rem;
+  height: 5rem;
+  margin: auto;
+}
+
+.fa-circle {
+  font-size: .5rem;
+  color: $brand-color;
+}

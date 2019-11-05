@@ -34,7 +34,15 @@ function InitHtmlInclude() {
 
 //Home functions
 function InitHomeSwiper(){
-	//code goes here
+	var swiper = new Swiper('.swiper-container', {
+		speed: 400,
+		slidesPerView: 4,
+		uniqueNavElements: true,
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+		}
+	});
 }
 function InitHomeProductLayout(){
 	//code goes here
