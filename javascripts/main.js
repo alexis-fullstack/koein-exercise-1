@@ -34,7 +34,7 @@ function InitHtmlInclude() {
 
 //Home functions
 function InitHomeSwiper(){
-	var swiper = new Swiper('.swiper-container', {
+	var swiper1 = new Swiper('.swiper-first', {
 		speed: 400,
 		slidesPerView: 4,
 		uniqueNavElements: true,
@@ -43,6 +43,17 @@ function InitHomeSwiper(){
 			type: 'bullets',
 		}
 	});
+
+	var swiper2 = new Swiper('.swiper-second', {
+		speed: 400,
+		slidesPerView: 4,
+		spaceBetween: 10,
+		navigation: {
+			prevEl: '.slide-prev',
+			nextEl: '.slide-next'
+		}
+	});
+
 }
 function InitHomeProductLayout(){
 	//code goes here

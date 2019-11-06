@@ -4,6 +4,13 @@
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
 
+@include font-face($font-lato, $base-url + 'fonts/', 'lato-light', 'lato-light', 200);
 @include font-face($font-lato, $base-url + 'fonts/', 'lato-regular', 'lato-regular', 400);
-@include font-face($font-lato-bold, $base-url + 'fonts/', 'lato-bold', 'lato-bold', 600);
+@include font-face($font-lato, $base-url + 'fonts/', 'lato-bold', 'lato-bold', 600);
+@include font-face($font-lato, $base-url + 'fonts/', 'lato-black', 'lato-black', 800);
+
+@include font-face($font-lato-italic, $base-url + 'fonts/', 'lato-light-italic', 'lato-light-italic', 200, 'italic');
+@include font-face($font-lato-italic, $base-url + 'fonts/', 'lato-italic', 'lato-italic', 400, 'italic');
+@include font-face($font-lato-italic, $base-url + 'fonts/', 'lato-bold-italic', 'lato-bold-italic', 600, 'italic');
+@include font-face($font-lato-italic, $base-url + 'fonts/', 'lato-black-italic', 'lato-black-italic', 800 ,'italic');
 

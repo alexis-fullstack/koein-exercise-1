@@ -6,10 +6,12 @@
 
 /// Regular font family
 $font-lato: 'Lato';
-$font-lato-bold: 'Lato-Bold';
+
+/// Italic font family
+$font-lato-italic: 'Lato-Italic';
 
 /// @type List
-$text-font-stack: $font-lato, $font-lato-bold !default;
+$text-font-stack: $font-lato, $font-lato-italic !default;
 
 /// Code (monospace) font family
 /// @type List

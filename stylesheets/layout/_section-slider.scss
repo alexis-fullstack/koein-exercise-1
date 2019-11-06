@@ -2,85 +2,133 @@
   margin-top: 5rem;
 }
 
-.swiper-container {
-  margin-right: 2rem;
-  margin-left: 2rem;
+// First Swiper
+.swiper-container.swiper-first {
+
+  .card {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    height: 18rem;
+
+    text-align: center;
+
+    border: none;
+
+    h2 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: $brand-color;
+    }
+
+    span {
+      position: relative;
+      z-index: 200;
+
+      font-size: 3rem;
+      color: $brand-color;
+      line-height: 0;
+
+      &::before {
+        content: " ";
+
+        position: relative;
+        left: -50%;
+        bottom: -20px;
+        z-index: 100;
+
+        display: flex;
+        width: 100%;
+
+        border-bottom: 1px solid;
+        border-color: #d9d9d9;
+      }
+
+      &::after {
+        content: " ";
+
+        position: relative;
+        right: -50%;
+        top: -9px;
+        z-index: 100;
+
+        display: flex;
+        width: 100%;
+
+        border-top: 1px solid;
+        border-color: #d9d9d9;
+      }
+    }
+
+    h5 {
+      margin-top: 1rem;
+
+      font-size: 1rem;
+      font-weight: 800;
+    }
+
+    p {
+      margin-top: 1rem;
+
+      font-size: 1rem;
+    }
+  }
+
+  .swiper-slide {
+    &:first-child {
+      span::before {
+        left: 0;
+      }
+    }
+
+    &:last-child {
+      span::after {
+        right: 0;
+      }
+    }
+  }
+
+  .card-img-top {
+    width: 5rem;
+    height: 5rem;
+    margin: auto;
+  }
 }
 
-.card {
-  padding-right: 2.5rem;
-  padding-left: 2.5rem;
-  height: 18rem;
+// About LMTA
+.wrapper-about {
+  margin-top: 5rem;
 
   text-align: center;
 
-  border: none;
-
   h2 {
-    font-family: $font-lato;
-    font-weight: 600;
+    font-size: 3.5rem;
+    font-weight: 200;
     color: $brand-color;
   }
 
-  span {
-    z-index: 200;
-
-    font-size: 3rem;
-    line-height: 0;
-
-    &::before {
-      content: " ";
-
-      position: relative;
-      right: 0;
-      bottom: -20px;
-      z-index: 100;
-
-      display: block;
-      width: 100%;
-
-      border-bottom: 1px solid;
-      border-color: #eee;
-    }
-
-    &::after {
-      content: " ";
-
-      position: relative;
-      right: 0;
-      top: -9px;
-      z-index: 100;
-
-      display: block;
-      width: 100%;
-
-      border-top: 1px solid;
-      border-color: #eee;
-    }
-  }
-
-  h5 {
-    margin-top: 1rem;
-
-    font-size: 1rem;
-    font-family: $font-lato;
-    font-weight: 600;
-  }
-
-  p {
-    margin-top: 1rem;
-
-    font-size: 1rem;
+  button {
+		margin-top: 2rem;
   }
 }
 
-.card-img-top {
-  width: 5rem;
-  height: 5rem;
-  margin: auto;
-}
+// Second Swiper
+.swiper-container.swiper-second {
+  margin-top: 4rem;
 
-.fa-circle {
-  font-size: .5rem;
-  color: $brand-color;
+  .card {
+    border: none;
+  }
+
+  .card-title {
+    margin-top: 2rem;
+
+    font-size: 1rem;
+    font-weight: 800;
+    color: $brand-color;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    background-image: none;
+  }
 }

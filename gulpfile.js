@@ -41,7 +41,7 @@ gulp.task('serve', gulp.series('sass', 'transpuglify', function() {
 		server: './'
 	});
 	gulp.watch('./stylesheets/**/*.scss', gulp.series('sass'));
-	gulp.watch('./javascripts/**/*.js', gulp.series('transpuglify'));
+	gulp.watch('./javascripts/**/main.js', gulp.series('transpuglify'));
 	gulp.watch('./*.html').on('change', browserSync.reload);
 }));
 
