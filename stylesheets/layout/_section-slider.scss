@@ -6,8 +6,6 @@
 .swiper-container.swiper-first {
 
   .card {
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
     height: 18rem;
 
     text-align: center;
@@ -113,7 +111,7 @@
 
 // Second Swiper
 .swiper-container.swiper-second {
-  margin-top: 4rem;
+  margin-top: 3rem;
 
   .card {
     border: none;
@@ -126,9 +124,24 @@
     font-weight: 800;
     color: $brand-color;
   }
+}
 
+.section-slider {
   .swiper-button-prev,
   .swiper-button-next {
+    z-index: 100;
+    top: 48%;
+
     background-image: none;
+  }
+
+  .swiper-button {
+    &-prev {
+      left: -2rem !important;
+    }
+
+    &-next {
+      right: -2rem !important;
+    }
   }
 }
