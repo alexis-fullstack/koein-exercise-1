@@ -1,0 +1,42 @@
+.section-news {
+  background-image: url("/assets/images/background-images/bg-footer.png");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+
+}
+
+.content-news {
+  margin-top: 4rem;
+
+  h2 {
+    font-weight: 800;
+  }
+
+  .card {
+    margin-top: 1rem;
+
+    background-color: rgba(0,0,0,0);
+    border: none;
+    border-radius: 0;
+
+    .card-body {
+      position: relative;
+      top: -2.5rem;
+      left: 1.5rem;
+      width: 79%;
+      padding: 1rem;
+
+      &:nth-child(1) {
+        width: 65%;
+      }
+
+      background-color: #ececec;
+    }
+
+    .card-title {
+      font-size: 3.25rem;
+      font-weight: 600;
+      line-height: 1;
+    }
+  }
+}

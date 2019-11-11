@@ -1,4 +1,135 @@
 .section-explore {
-  background-image: url(/assets/images/background-images/bg-details.png);
+  margin-top: 4rem;
+  padding-bottom: 9rem;
+
+  background-image: url("/assets/images/background-images/bg-details.png");
   background-position-x: center;
+}
+
+.content-explore {
+  margin-top: 19rem;
+  margin-left: 1rem;
+  padding: 3rem 2rem;
+
+  color: $white;
+
+  background-image: url("/assets/images/detail-box/bg-detail.png");
+  background-repeat: no-repeat;
+
+  h2 {
+    padding-bottom: 1rem;
+
+    font-weight: 600;
+
+    border-bottom: .5rem solid;
+    border-color: $secondary-color;
+  }
+}
+
+.content-difficulty {
+
+  h6 {
+    margin-top: 2.5rem;
+    font-weight: 800;
+  }
+
+  .difficulty-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding-left: 0;
+
+    font-size: .8rem;
+    list-style-type: none;
+
+    li {
+      width: 25%;
+
+      &:nth-child(3),
+      &:nth-child(4) {
+        text-align: end;
+      }
+    }
+  }
+
+  .select-trail {
+    width: 100%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+
+    font-size: 1rem;
+    color: $white;
+
+    background-color: rgba(0,0,0,0);
+    background-image: url("/assets/images/33.fw.png");
+    background-repeat: no-repeat;
+    background-position: 97%;
+    border: none;
+    border-bottom: 1px solid;
+    border-color: $mid-grey;
+
+    appearance: none;
+    outline: none;
+
+    option {
+      color: $white;
+
+      background-color: rgba(0,0,0,0) !important;
+    }
+  }
+
+  .trail-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    padding-left: 0;
+
+    text-align: center;
+    font-size: .9rem;
+    list-style-type: none;
+
+    li {
+      margin-top: .5rem;
+      padding: .5rem;
+      width: 49%;
+
+
+      border: 1px solid;
+      border-color: $mid-grey;
+    }
+  }
+
+  button {
+    margin-top: 3rem;
+    width: 100%;
+  }
+}
+
+.content-map {
+  padding: 1rem;
+}
+
+.content-guide {
+  margin-top: 2rem;
+
+  text-align: center;
+
+  .card {
+    padding-bottom: 2rem;
+    padding-left: 1.75rem;
+    background-color: rgba(0,0,0,0);
+
+    .card-img-top {
+      width: 4rem;
+      margin: auto;
+    }
+
+    h6 {
+      margin-top: 1rem;
+      
+      font-size: .74rem;
+      font-weight: 800;
+    }
+  }
 }
