@@ -1,8 +1,9 @@
 .section-news {
+  padding-bottom: 8.5rem;
+
   background-image: url("/assets/images/background-images/bg-footer.png");
   background-repeat: no-repeat;
   background-position-y: bottom;
-
 }
 
 .content-news {
@@ -26,11 +27,14 @@
       width: 79%;
       padding: 1rem;
 
-      &:nth-child(1) {
-        width: 65%;
-      }
-
       background-color: #ececec;
+    }
+
+    &:nth-child(1) {
+
+      .card-body {
+        width: 70%;
+      }
     }
 
     .card-title {

@@ -1,0 +1,25 @@
+.section-footer {
+  font-size: .85rem;
+  color: $white;
+
+  background-color: #343434;
+
+  ul {
+    padding-top: 1rem;
+    padding-left: 0;
+
+    list-style-type: none;
+
+    li {
+      padding-top: .7rem;
+
+      img {
+        padding-right: .75rem;
+      }
+    }
+  }
+
+  .col-lg-3 {
+    background-color: #585858;
+  }
+}

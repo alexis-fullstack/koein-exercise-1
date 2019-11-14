@@ -1,0 +1,33 @@
+.section-sponsor {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+  h6 {
+    font-size: .8rem;
+    font-weight: 800;
+
+    &::after {
+      content: " ";
+
+      position: absolute;
+      top: .5rem;
+      right: 0;
+
+      display: block;
+      width: 92%;
+
+      border-bottom: 1px solid;
+      border-color: $mid-grey;
+    }
+  }
+
+  .col-lg-2,
+  .col-lg-9 {
+    margin-top: 1rem;
+  }
+
+  .col-lg-9 {
+    font-size: .8rem;
+    font-weight: 600;
+  }
+}
